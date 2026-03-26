@@ -2,6 +2,7 @@
 <html>
     <head>
 
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
         <link rel="stylesheet" href="/common.css">
 
     </head>
@@ -11,14 +12,6 @@
         <footer id="footer-placeholder"></footer>
 
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-        <script>
-            // https://stackoverflow.com/questions/31954089/how-can-i-reuse-a-navigation-bar-on-multiple-pages
-            $.get("/navigation.html", function(data){
-                $("#nav-placholder").replaceWith(data)
-            })
-            $.get("/footer.html", function(data){
-                $("#footer-placeholder").replaceWith(data)
-            })
-        </script>
+        <script src="main.js"></script>
     </body>
 </html>

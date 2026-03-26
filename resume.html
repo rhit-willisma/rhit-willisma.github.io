@@ -2,33 +2,47 @@
 <html>
     <head>
 
-        <link rel="stylesheet" href="/common.css">
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <link rel="stylesheet" href="common.css">
 
     </head>
     <body>
         <nav id="nav-placholder"></nav>
 
-        <section>
-            <h2>Technologies I know</h2>
-            <ul>
-                <li>HTML, Javascript, CSS</li>
-                <li>Rust</li>
-                <li>Python</li>
-                <li></li>
-            </ul>
-        </section>
+        <div class="center"><h1 class="content">Resume</h1></div>
+        <div class="center">
+            <section class="leftalign content">
+                <h2>Technologies I know</h2>
+                <ul>
+                    <li>HTML, Javascript, CSS</li>
+                    <li>Rust</li>
+                    <li>Python</li>
+                </ul>
+            </section>
+        </div>
+
+        <div class="center">
+            <section class="leftalign content">
+                <h2>Work Experience</h2>
+                <p>None</p>
+            </section>
+        </div>
+        <div class="center">
+            <section class="leftalign content">
+                <h2>Education</h2>
+                <ul>
+                    <li>Highschool graduate</li>
+                    <li>Introductory Java</li>
+                    <li>Data structures and Algorithms</li>
+                    <li>Intro to systems programming</li>
+                    <li>Intro to webdev</li>
+                    <li>Computer Architecture I</li>
+                </ul>
+            </section>
+        </div>
 
         <footer id="footer-placeholder"></footer>
-
-        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-        <script>
-            // https://stackoverflow.com/questions/31954089/how-can-i-reuse-a-navigation-bar-on-multiple-pages
-            $.get("/navigation.html", function(data){
-                $("#nav-placholder").replaceWith(data)
-            })
-            $.get("/footer.html", function(data){
-                $("#footer-placeholder").replaceWith(data)
-            })
-        </script>
+        
+        <script src="main.js"></script>
     </body>
 </html>
