@@ -1,8 +1,18 @@
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>TODO</title>
+        
 	</head>
     <body>
+        <nav id="nav-placholder"></nav>
         <mark>TODO: implement your portfolio.</mark>
+
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script>
+            $.get("/navigation.html", function(data){
+                $("#nav-placholder").replaceWith(data)
+            })
+        </script>
     </body>
 </html>
