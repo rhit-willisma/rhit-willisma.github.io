@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+}
+
+nav {
+    background-color: #19205a;
+    color: white;
+    margin: 0px;
+    padding: 5px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+section {
+    width: 75%;
+}
+
+#main-section h1 {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
